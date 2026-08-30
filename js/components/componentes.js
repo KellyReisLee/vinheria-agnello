@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <header class="navbar">
       <a href="index.html" class="agnello-logo-link" style="text-decoration: none; display: inline-flex; align-items: center;">
         <div class="logo">
-          <img class="logo-img" src="assets/images/logo-no-bg.png" alt="Ícone Vinheria Agnello">
+          <img class="logo-img" src="/assets/images/" alt="Ícone Vinheria Agnello">
           <div>
             <span class="logo-title">VINHERIA AGNELLO</span>
             <span class="logo-subtitle">DESDE 1978</span>
