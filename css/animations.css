@@ -81,3 +81,41 @@
     transform: scale(1);
   }
 }
+
+
+
+/* ANIMAÇÕES PARA A SEÇÃO FAMILY  */
+/* Estado inicial (invisíveis antes de entrar na tela) */
+.family-image-wrapper,
+.family-text,
+.image-frame-decoration,
+.family-mini-badge,
+.founders-profile {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* Quando o Observer injeta .is-visible individualmente em cada elemento */
+.family-image-wrapper.is-visible {
+  animation: familyCalmFadeLeft 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.family-image-wrapper.is-visible .image-frame-decoration {
+  animation: familyCalmFadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+
+.family-image-wrapper.is-visible .family-image-box img {
+  animation: familyImageReveal 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.family-image-wrapper.is-visible .family-mini-badge {
+  animation: familyBadgePop 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.7s forwards;
+}
+
+.family-text.is-visible {
+  animation: familyCalmFadeRight 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+
+.family-text.is-visible .founders-profile {
+  animation: familyCalmFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}

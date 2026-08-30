@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <header class="navbar">
       <a href="index.html" class="agnello-logo-link" style="text-decoration: none; display: inline-flex; align-items: center;">
         <div class="logo">
-          <img class="logo-img" src="/assets/images/" alt="Ícone Vinheria Agnello">
+          <img class="logo-img" src="/assets/images/logo-no-bg.png" alt="Ícone Vinheria Agnello">
           <div>
             <span class="logo-title">VINHERIA AGNELLO</span>
             <span class="logo-subtitle">DESDE 1978</span>
@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
       </nav>
       
       <div class="nav-icons">
-        <button class="icon-btn"><img src="./assets/icons/icons-home/search.svg" alt="lupa"></button>
+        <button class="icon-btn"><img src="/assets/icons/search.svg" alt="lupa"></button>
 
         <a href="login.html" class="icon-btn" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none;">
-       <img src="./assets/icons/icons-home/user.svg" alt="perfil">
+       <img src="/assets/icons/user.svg" alt="perfil">
         </a>
       
         <button class="icon-btn cart-btn">
-        <img src="./assets/icons/icons-home/shopping-cart.svg" alt="carrinho">
+        <img src="/assets/icons/shopping-cart.svg" alt="carrinho">
         <span class="cart-badge" style="display:none;">0</span>
         </button>
       </div>
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <h4>GARANTIA E SEGURANÇA</h4>
         <p class="footer-warranty">
           <span class="box-package">
-            <img src="./assets/icons/icons-home/package.svg" alt="box" srcset="">
+            <img src="/assets/icons/package.svg" alt="box" srcset="">
             Embalagem térmica e antichoque patenteada. Sua garrafa chega intacta ou enviamos
             outra imediatamente.
           </span>
