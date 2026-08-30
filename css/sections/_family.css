@@ -1,0 +1,152 @@
+/* FAMILY SECTION FROM HOMEPAGE  */
+
+.family-section {
+  padding: 7rem 5%;
+  background-color: var(--bg-offwhite);
+  overflow: hidden;
+}
+
+.family-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.family-image-wrapper {
+  position: relative;
+  animation: familyFadeInLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.image-frame-decoration {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 80px;
+  height: 80px;
+  border-top: 2px solid var(--accent-gold);
+  border-left: 2px solid var(--accent-gold);
+  z-index: 1;
+}
+
+.family-image-box {
+  width: 100%;
+  height: 420px;
+  background-color: #2C2C2C;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.family-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.family-image-box:hover img {
+  transform: scale(1.03);
+}
+
+.family-mini-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--card-bg, #FFFFFF);
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--accent-gold);
+  z-index: 3;
+  opacity: 0;
+  animation: badgePopUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+
+.family-mini-badge strong {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: var(--primary-wine);
+  display: block;
+}
+
+.family-mini-badge p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.family-text {
+  animation: familyFadeInRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.family-text h2 {
+  font-family: var(--font-heading);
+  color: var(--primary-wine);
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.italic-text {
+  font-style: italic;
+  color: #7A7A7A;
+  font-weight: 400;
+}
+
+.family-desc-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-charcoal);
+  margin-bottom: 1rem;
+}
+
+.family-text p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.founders-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.founders-avatar {
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-wine);
+  color: var(--accent-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.founders-profile strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-charcoal);
+}
+
+.founders-role {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: var(--accent-gold);
+  font-weight: 600;
+}

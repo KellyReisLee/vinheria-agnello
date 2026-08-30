@@ -1,0 +1,58 @@
+/* VITRINI SECTION FROM HOMEPAGE  */
+
+.vitrine-section {
+  padding: 5rem 5%;
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-header h2 {
+  font-family: var(--font-heading);
+  color: var(--primary-wine);
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.center-action {
+  text-align: center;
+}
+
+.btn-outline-dark {
+  border: 1px solid var(--primary-wine);
+  color: var(--primary-wine);
+  padding: 0.8rem 2.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--primary-wine);
+  color: #FFF;
+}
