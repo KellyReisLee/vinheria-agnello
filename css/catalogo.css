@@ -9,6 +9,7 @@
 @import url('./sections/_footer-completed.css');
 @import url('./sections/_responsive.css');
 @import url('./sections/_carrinho.css');
+@import url('./sections/_chat.css');
 
 /* css/catalogo.css */
 .catalog-container {

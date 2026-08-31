@@ -13,6 +13,7 @@
 @import url('./sections/_footer-completed.css');
 @import url('./sections/_responsive.css');
 @import url('./sections/_carrinho.css');
+@import url('./sections/_chat.css');
 
 .sugestoes-page-body-unique {
   background-color: var(--primary-wine, #27030E);
