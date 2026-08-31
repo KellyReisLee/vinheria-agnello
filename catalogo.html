@@ -46,13 +46,14 @@
         <button class="agnello-filter-btn" data-filtro="espumante">Espumantes / Rosé</button>
       </div>
 
-      <div class="agnello-sort-box">
-        <select id="select-ordenacao" class="agnello-sort-select">
-          <option value="padrao">Ordenar por: Destaques</option>
-          <option value="menor-preco">Menor Preço</option>
-          <option value="maior-preco">Maior Preço</option>
-          <option value="nome">Nome (A-Z)</option>
-        </select>
+      <div class="agnello-custom-select" id="agnelloSortDropdown">
+        <div class="agnello-select-selected">Ordenar por: Relevância</div>
+        <div class="agnello-select-items agnello-select-hide">
+          <div data-value="relevancia">Ordenar por: Relevância</div>
+          <div data-value="menor-preco">Menor Preço</div>
+          <div data-value="maior-preco">Maior Preço</div>
+          <div data-value="pontuacao">Melhores Avaliados</div>
+        </div>
       </div>
     </section>
 

@@ -92,9 +92,11 @@
 }
 
 /* ==========================================================================
-   BARRA DE FERRAMENTAS (TOOLBAR)
+   BARRA DE FERRAMENTAS (TOOLBAR) - DROPDOWN CUSTOMIZADO INTEGRADO
    ================================================================---------- */
 .agnello-toolbar {
+  position: relative;
+  z-index: 10;
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 1.5rem;
@@ -107,6 +109,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
   animation: agnelloFadeInUp 0.8s ease-out;
 }
+
 
 .agnello-search-input {
   width: 100%;
@@ -156,21 +159,66 @@
   font-weight: 600;
 }
 
-.agnello-sort-select {
+/* ==========================================================================
+   DROPDOWN CUSTOMIZADO (SUBSTITUIÇÃO SEGURA DO SELECT NATIVO)
+   ================================================================---------- */
+.agnello-custom-select {
+  position: relative;
+  font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+  font-size: 0.9rem;
+  color: var(--text-charcoal, #2C2C2C);
   background-color: var(--bg-offwhite, #F9F8F6);
   border: 1px solid #DDD3C5;
-  color: var(--text-charcoal, #2C2C2C);
-  padding: 0.8rem 1rem;
   border-radius: 4px;
-  font-family: var(--font-body);
-  font-size: 0.9rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  user-select: none;
+  min-width: 200px;
+  transition: border-color 0.3s ease;
 }
 
-.agnello-sort-select:focus {
-  outline: none;
+.agnello-custom-select:hover {
   border-color: var(--accent-gold, #D4AF37);
+}
+
+.agnello-select-selected {
+  padding: 0.8rem 2.5rem 0.8rem 1rem;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234A1525' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}
+
+.agnello-select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #FFFFFF;
+  border: 1px solid #DDD3C5;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  margin-top: 1px;
+}
+
+.agnello-select-items div {
+  padding: 0.8rem 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.agnello-select-items div:hover {
+  background-color: #FDF8EC;
+  color: var(--primary-wine, #4A1525);
+}
+
+.agnello-select-hide {
+  display: none;
+}
+
+/* Mantém compatibilidade com a classe antiga caso reutilizada */
+.agnello-sort-select {
+  display: none;
 }
 
 /* ==========================================================================
@@ -433,7 +481,7 @@
 }
 
 /* ==========================================================================
-   RESPONSIVIDADE
+   RESPONSIVIDADE (ATUALIZADA PARA CORRIGIR A BARRA DE FILTROS/SELECT)
    ================================================================---------- */
 @media (max-width: 968px) {
   .agnello-toolbar {
@@ -444,6 +492,11 @@
   .agnello-filters-wrapper {
     overflow-x: auto;
     padding-bottom: 5px;
+    width: 100%;
+  }
+
+  .agnello-custom-select {
+    width: 100%;
   }
 }
 
