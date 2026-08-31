@@ -32,8 +32,11 @@
 
                 <div class="chat-footer">
                     <input type="file" id="chat-file-input" style="display: none;">
-                    <button class="chat-action-icon" id="chat-attach-btn" aria-label="Anexar arquivo">📎</button>
-                    <button class="chat-action-icon" id="chat-emoji-btn" aria-label="Inserir emoji">😊</button>
+                    <button class="chat-action-icon" id="chat-attach-btn" aria-label="Anexar arquivo"><img src="./assets/icons/paperclip.svg" alt="Imagem de Paperclip">
+                    </button>
+                    <button class="chat-action-icon" id="chat-emoji-btn" aria-label="Inserir emoji">
+                     <img src="./assets/icons/face-grinning.svg" alt="Imagem de emoji sorridente">
+                    </button>
                     <input type="text" id="chat-input" placeholder="Escreva a sua mensagem...">
                     <button id="chat-send-btn">Enviar</button>
                 </div>
