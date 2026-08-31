@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugestões do Sommelier — Vinheria Agnello</title>
+
+
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/quiz.css">
+  <link rel="stylesheet" href="./css/sugestoes-sommelier.css">
+
+
+</head>
+
+<body class="sugestoes-page-body-unique">
+
+  <div id="site-header"></div>
+
+  <main class="sugestoes-main-wrapper-unique">
+    <div class="sugestoes-container-unique">
+
+      <div class="sugestoes-header-unique">
+        <span class="calc-tag-unique">SELEÇÃO EXCLUSIVA DE RÓTULOS</span>
+        <h1 class="sugestoes-title-unique">Sua Adega Personalizada</h1>
+        <p class="sugestoes-subtitle-unique" id="perfil-descricao-unique">Buscando vinhos harmonizados com o seu
+          perfil...</p>
+      </div>
+
+      <!-- GRID DE PRODUTOS ESTILO E-COMMERCE -->
+      <div class="vinhos-grid-unique" id="vinhos-container-unique">
+        <!-- Os cards de vinho com imagem, badges e preços serão injetados aqui -->
+      </div>
+
+      <div class="sugestoes-actions-unique">
+        <a href="quiz.html" class="btn-refazer-unique">Refazer o Quiz</a>
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <!-- Cole este HTML no final do seu body, antes de fechar a tag -->
+  <div id="agnello-cart-overlay" class="agnello-cart-overlay"></div>
+  <div id="agnello-cart-drawer" class="agnello-cart-drawer">
+    <div class="agnello-cart-header">
+      <button id="agnello-cart-close" class="agnello-cart-back-btn">←</button>
+      <h2 id="agnello-cart-title">Carrinho (0)</h2>
+    </div>
+    <div id="agnello-cart-body" class="agnello-cart-body"></div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="./js/pages/sugestoes-sommelier.js"></script>
+  <script src="./js/data/catalogo-vinhos.js"></script>
+  <script src="./js/gaveta-carrinho.js"></script>
+  <script src="./js/components/componentes.js"></script>
+
+
+</body>
+
+</html>
