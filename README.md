@@ -91,9 +91,9 @@ Agradecemos a todos que colaboraram para o desenvolvimento deste projeto:
 ## 📱 Telas do Projeto
 
 <p align="center">
-  <img src="./assets/images/home.png" width="18%" alt="Home" />
-  <img src="./assets/images/catalogo.png" width="18%" alt="Catálogo" />
-  <img src="./assets/images/produto.png" width="18%" alt="Produto" />
-  <img src="./assets/images/quiz.png" width="18%" alt="Quiz" />
-  <img src="./assets/images/calculadora.png" width="18%" alt="Calculadora" />
+  <img src="./assets/images/imagens-projeto/homepage-image.png" width="18%" alt="Home" />
+  <img src="./assets/images/imagens-projeto/catalogo.png" width="18%" alt="Catálogo" />
+  <img src="./assets/images/imagens-projeto/login.png" width="18%" alt="Página de Login" />
+  <img src="./assets/images/imagens-projeto/quiz-image.png" width="18%" alt="Quiz" />
+  <img src="./assets/images/imagens-projeto/escolha-sommelier.png" width="18%" alt="Escolha do Sommelier" />
 </p>
