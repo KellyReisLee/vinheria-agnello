@@ -90,7 +90,6 @@ Agradecemos a todos que colaboraram para o desenvolvimento deste projeto:
 
 
 ## 📱 Telas do Projeto
-## 📱 Telas do Projeto
 
 <p align="center">
   <img src="./assets/images/imagens-projeto/homepage-image.png" width="18%" alt="Home" /> &nbsp;
