@@ -8,6 +8,7 @@
 @import url('./sections/_footer-intern.css');
 @import url('./sections/_footer-completed.css');
 @import url('./sections/_responsive.css');
+@import url('./sections/_carrinho.css');
 
 /* Estilos Exclusivos da Página de Login - Vinheria Agnello (Versão Clara e Elegante) */
 .agnello-login-body {

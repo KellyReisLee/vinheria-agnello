@@ -7,6 +7,7 @@
 @import url('./sections/_buttons.css');
 @import url('./sections/_footer-intern.css');
 @import url('./sections/_responsive.css');
+@import url('./sections/_carrinho.css');
 
 .sugestoes-page-body-unique {
   background-color: var(--primary-wine, #27030E);
