@@ -94,7 +94,7 @@ Agradecemos a todos que colaboraram para o desenvolvimento deste projeto:
 <p align="center">
   <img src="./assets/images/imagens-projeto/homepage-image.png" width="18%" alt="Home" /> &nbsp;
   <img src="./assets/images/imagens-projeto/catalogo.png" width="18%" alt="Catálogo" /> &nbsp;
-  <img src="./assets/images/imagens-projeto/login.png" width="18%" alt="Página de Login" /> &nbsp;
   <img src="./assets/images/imagens-projeto/quiz-image.png" width="18%" alt="Quiz" /> &nbsp;
-  <img src="./assets/images/imagens-projeto/escolha-sommelier.png" width="18%" alt="Escolha do Sommelier" />
+  <img src="./assets/images/imagens-projeto/escolha-sommelier.png" width="18%" alt="Escolha do Sommelier" /> &nbsp;
+  <img src="./assets/images/imagens-projeto/login.png" width="18%" alt="Página de Login" /> 
 </p>
