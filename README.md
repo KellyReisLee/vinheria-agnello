@@ -62,6 +62,7 @@ Vinheria Agnello/
 ├── quiz.html               # Quiz do Sommelier
 └── sugestoes-sommelier.html# Recomendações Personalizadas
 
+```
 ## 🛠️ Tecnologias Utilizadas
 
 * **HTML5 Semantic:** Estruturação acessível e otimizada para SEO.
