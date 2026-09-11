@@ -19,7 +19,7 @@
   font-family: var(--font-body);
 }
 
-.agnello-login-main {
+.agnello-cadastro-main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
 
 }
 
-.agnello-login-container {
+.agnello-cadastro-container {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   background: #ffffff;
@@ -41,7 +41,7 @@
   border: 1px solid rgba(74, 21, 37, 0.08);
 }
 
-.agnello-login-box {
+.agnello-cadastro-box {
   padding: 40px 50px;
   display: flex;
   flex-direction: column;
@@ -49,18 +49,18 @@
 
 }
 
-.login-header-text {
+.cadastro-header-text {
   margin-bottom: 24px;
 }
 
-.login-header-text h1 {
+.cadastro-header-text h1 {
   font-size: 24px;
   color: var(--primary-wine);
   margin-bottom: 8px;
   font-family: var(--font-heading);
 }
 
-.login-header-text p {
+.cadastro-header-text p {
   font-size: 14px;
   color: #666;
 }
