@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span>Total</span>
             <span style="color: #4A1525; font-size: 1.3rem;">R$ ${totalGeral.toFixed(2).replace('.', ',')}</span>
           </div>
-         <button onclick="window.location.href='login.html'" style="width: 100%; background-color: #da7e05; color: #FFFFFF; border: none; padding: 0.9rem; border-radius: 6px; font-size: 1.5rem; letter-spacing: 1px; font-weight: 700; cursor: pointer;">Finalizar pedido</button>
+         <button onclick="window.location.href='checkout.html'" style="width: 100%; background-color: #da7e05; color: #FFFFFF; border: none; padding: 0.9rem; border-radius: 6px; font-size: 1.5rem; letter-spacing: 1px; font-weight: 700; cursor: pointer;">Finalizar pedido</button>
         </div>
       `;
     }
