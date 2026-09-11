@@ -82,7 +82,7 @@
           </div>
           <div class="shipping-options-grid">
             <label class="shipping-option selected">
-              <input type="radio" name="shipping" checked>
+              <input type="radio" name="shipping" value="25.00" checked>
               <div class="shipping-info">
                 <span class="ship-name">Frete Térmico Agnello (Especial)</span>
                 <span class="ship-time">Entrega em até 48h com controle de temperatura</span>
@@ -90,7 +90,7 @@
               <span class="ship-price">R$ 25,00</span>
             </label>
             <label class="shipping-option">
-              <input type="radio" name="shipping">
+              <input type="radio" name="shipping" value="0.00">
               <div class="shipping-info">
                 <span class="ship-name">Retirada na Adega Física</span>
                 <span class="ship-time">Disponível em 3 horas (Jardins, SP)</span>
@@ -141,7 +141,7 @@
               </div>
               <div class="input-group">
                 <label for="card-name">Nome Impresso no Cartão</label>
-                <input type="text" id="card-name" placeholder="KELLY AGNELLO">
+                <input type="text" id="card-name" placeholder="PAULO OLIVEIRA">
               </div>
             </form>
           </div>
@@ -164,37 +164,30 @@
           <h3>Resumo da Compra</h3>
 
           <div class="summary-items-list">
-            <div class="summary-item">
-              <span class="item-name">Barolo DOCG 2018 <small>x1</small></span>
-              <span class="item-val">R$ 380,00</span>
-            </div>
-            <div class="summary-item">
-              <span class="item-name">Brunello di Montalcino <small>x1</small></span>
-              <span class="item-val">R$ 490,00</span>
-            </div>
+            <!-- Preenchido dinamicamente pelo arquivo checkout.js -->
           </div>
 
           <div class="summary-totals">
             <div class="calc-row">
               <span>Subtotal</span>
-              <span>R$ 870,00</span>
+              <span>R$ 0,00</span>
             </div>
             <div class="calc-row">
               <span>Frete Térmico</span>
               <span>R$ 25,00</span>
             </div>
-            <div class="calc-row discount">
+            <div class="calc-row discount" id="row-discount">
               <span>Desconto Pix (5%)</span>
-              <span>- R$ 43,50</span>
+              <span>- R$ 0,00</span>
             </div>
             <div class="calc-row total">
               <span>Total a Pagar</span>
-              <span class="final-price">R$ 851,50</span>
+              <span class="final-price">R$ 0,00</span>
             </div>
           </div>
 
           <button type="button" class="btn-agnello-primary checkout-action-btn"
-            onclick="alert('Pedido realizado com sucesso! Bem-vindo à família Agnello.'); window.location.href='minha-conta.html';">
+            onclick="alert('Pedido realizado com sucesso! Bem-vindo à família Agnello.'); window.location.href='area-pessoal.html';">
             Concluir Pedido com Segurança
           </button>
 
@@ -217,39 +210,15 @@
   <!-- Rodapé Institucional Completo Compartilhado -->
   <div id="site-footer-completo"></div>
 
-  <!-- Scripts do Sistema -->
+  <!-- SCRIPTS DO SISTEMA (Organizados e sem duplicações) -->
+
   <script src="./js/components/componentes.js"></script>
 
-  <!-- Script de Interatividade das Abas de Pagamento -->
-  <script>
-    document.querySelectorAll('.pay-tab').forEach(tab => {
-      tab.addEventListener('click', function () {
-        document.querySelectorAll('.pay-tab').forEach(t => t.classList.remove('active'));
-        document.querySelectorAll('.pay-content').forEach(c => c.classList.remove('active'));
 
-        this.classList.add('active');
-        const targetId = this.getAttribute('data-target');
-        document.getElementById(targetId).classList.add('active');
-      });
-    });
-  </script>
-
-  <!-- IMPORTAÇÃO DE SCRIPTS NA ORDEM CORRETA -->
-  <!-- 1. Primeiro a base de dados -->
-  <script src="./js/catalogo-vinhos.js"></script>
-
-  <!-- 2. Depois os utilitários e componentes globais -->
-  <script src="./js/componentes.js"></script>
-  <script src="./js/gaveta-carrinho.js"></script>
-
-  <!-- 3. Por fim, os scripts específicos da página -->
-  <script src="./js/home.js"></script>
-  <script src="./js/components/calculadora.js"></script>
-  <script src="./js/components/componentes.js"></script>
-  <script src="./js/data/achados-da-semana.js"></script>
-  <script src="./js/pages/home.js"></script>
-  <script src="./js/components/carrinho.js"></script>
   <script src="./js/components/chat.js"></script>
+
+  <!-- SCRIPT EXCLUSIVO DA TELA DE CHECKOUT -->
+  <script src="./js/pages/checkout.js"></script>
 </body>
 
 </html>
