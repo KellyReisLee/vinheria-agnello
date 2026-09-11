@@ -7,7 +7,10 @@
   <title>Minha Adega Pessoal — Vinheria Agnello</title>
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/global.css">
-  <link rel="stylesheet" href="./css/minha-conta.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/sections/_chat.css">
+  <link rel="stylesheet" href="./css/area-pessoal.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
@@ -24,10 +27,10 @@
       <aside class="account-sidebar">
         <div class="user-profile-card">
           <div class="avatar-wrapper">
-            <span class="avatar-initials">KA</span>
+            <span class="avatar-initials">PO</span>
             <span class="loyalty-badge">Elite</span>
           </div>
-          <h3>Kelly Agnello</h3>
+          <h3>Paulo Oliveira</h3>
           <p>Membro desde 2024</p>
         </div>
 
@@ -61,22 +64,30 @@
         <!-- Atalhos Rápidos (Grid de Ações) -->
         <div class="quick-actions-grid">
           <a href="#" class="action-card">
-            <div class="icon-box">📦</div>
+            <div class="icon-box">
+              <img src="./assets/icons/truck.svg" alt="">
+            </div>
             <h4>Rastrear Pedidos</h4>
             <p>Acompanhe entregas e notas fiscais</p>
           </a>
           <a href="#" class="action-card">
-            <div class="icon-box">💳</div>
+            <div class="icon-box">
+              <img src="./assets/icons/credit-card.svg" alt="">
+            </div>
             <h4>Cartões & Carteira</h4>
             <p>Gerencie formas de pagamento</p>
           </a>
           <a href="#" class="action-card">
-            <div class="icon-box">🍷</div>
+            <div class="icon-box">
+              <img src="./assets/icons/wine.svg" alt="">
+            </div>
             <h4>Clube de Assinatura</h4>
             <p>Modifique sua caixa mensal</p>
           </a>
           <a href="#" class="action-card">
-            <div class="icon-box">📍</div>
+            <div class="icon-box">
+              <img src="./assets/icons/map-pin.svg" alt="">
+            </div>
             <h4>Meus Endereços</h4>
             <p>Locais de entrega salvos</p>
           </a>
@@ -111,6 +122,19 @@
 
   <div id="site-footer-completo"></div>
 
+  <!-- CARRINHO DRAWER -->
+  <div id="agnello-cart-overlay" class="agnello-cart-overlay"></div>
+  <div id="agnello-cart-drawer" class="agnello-cart-drawer">
+    <div class="agnello-cart-header">
+      <button id="agnello-cart-close" class="agnello-cart-back-btn">←</button>
+      <h2 id="agnello-cart-title">Carrinho (0)</h2>
+    </div>
+    <div id="agnello-cart-body" class="agnello-cart-body"></div>
+  </div>
+  <script src="./js/catalogo.js"></script>
+  <script src="./js/components/componentes.js"></script>
+  <script src="./js/components/carrinho.js"></script>
+  <script src="./js/components/chat.js"></script>
 </body>
 
 </html>
